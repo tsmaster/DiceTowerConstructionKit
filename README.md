@@ -1,5 +1,8 @@
 # Modular Dice Tower Construction Kit
 
+By Dave LeCompte
+
+
 I recently got a Monoprice Mini Delta 3D printer, which has a 110mm
 diameter print bed. This is adequate for a lot of printing jobs, but
 can provide an interesting constraint for larger tasks. I wanted to
