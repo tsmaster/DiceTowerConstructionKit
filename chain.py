@@ -9,7 +9,7 @@ if sys.version_info[0] != 3:
     exit(-1)
 
 # the thickness of a chain link, from hole to outside
-CHAIN_R = 4.25
+CHAIN_R = 3.75
 
 # the radius of the interior hole, when the link is laid flat
 HOLE_R = 1.5 * CHAIN_R
@@ -71,7 +71,8 @@ def chain(nLinks):
 
 def chainModule():
     num_links = 8
-    module_height = 30
+    module_height = 2 * LINK_REST_HEIGHT
+    anchor_depth = CHAIN_R
     
     chainLinks = chain(num_links)
     advanced = num_links * LINK_ADVANCE
@@ -79,7 +80,13 @@ def chainModule():
 
     base_tube = tube.basicTube(module_height)
     internal_space = tube.tubeInnerSpace(module_height)
-    return base_tube + (chainLinks & internal_space)
+
+    anchor1 = ops.Cube([module_height, 2 * anchor_depth, module_height])
+    anchor1 = anchor1.translate([-module_height / 2, tube.RADIUS - tube.THICKNESS - anchor_depth, 0])
+
+    anchor2 = anchor1.rotate([0, 0, 180])
+    
+    return base_tube + ((chainLinks + anchor1 + anchor2) & internal_space)
     
         
 
