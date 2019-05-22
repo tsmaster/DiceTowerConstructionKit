@@ -22,6 +22,8 @@ Current modules include:
 
  - Receiver: a module to put at the bottom to collect the dice.
 
+ - Ramp: a simple 45 degree slat that bounces dice away from one edge of a tube
+
 
 More modules are planned. You can print out any number of modules and
 assemble them as you like, and each module can be freely

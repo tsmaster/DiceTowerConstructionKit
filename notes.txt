@@ -16,7 +16,7 @@ Modules:
 
 [ ] Larger base (non circle)
 
-[ ] Ramp - an inclined plane on one (2?) sides of the tube
+[x] Ramp - an inclined plane on one (2?) sides of the tube
 
 [ ] Propellor - an inclined plane pushing dice tangentially
 
