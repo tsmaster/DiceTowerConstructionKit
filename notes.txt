@@ -46,7 +46,7 @@ Modules:
 
 [ ] juicer - like an orange juicer, but dice come out, not juice
 
-[ ] chain - a tube with a print-in-place chain across the tube
+[x] chain - a tube with a print-in-place chain across the tube
 
 [X] null tube - just a tube
 
