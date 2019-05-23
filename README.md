@@ -14,17 +14,19 @@ customizable randomization for your dice rolls.
 
 Current modules include:
 
- - Conical Funnel: a cone-shaped funnel that might be at the top, where you might put the dice in.
+ - Conical Funnel: a cone-shaped funnel that might be at the top, where you might put the dice in
 
- - Spacer: a "null" module that doesn't interfere with the dice, just gives them room to fall.
+ - Spacer: a "null" module that doesn't interfere with the dice, just gives them room to fall
 
- - Triangular beam: a beam across the module with a triangular cross section, bouncing some one way, some the other way.
+ - Triangular beam: a beam across the module with a triangular cross section, bouncing some one way, some the other way
 
  - Receiver: a module to put at the bottom to collect the dice.
 
  - Ramp: a simple 45 degree slat that bounces dice away from one edge of a tube
 
  - Chain: a tube with a chain spanning the center
+
+ - Propellor: a pair of blades that cause the dice to go counterclockwise around the tube
 
 
 More modules are planned. You can print out any number of modules and

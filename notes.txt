@@ -18,7 +18,7 @@ Modules:
 
 [x] Ramp - an inclined plane on one (2?) sides of the tube
 
-[ ] Propellor - an inclined plane pushing dice tangentially
+[x] Propellor - an inclined plane pushing dice tangentially
 
 [ ] Beam - just a simple strut across a radius (chord?)
   
@@ -60,11 +60,17 @@ Modules:
 
 [ ] tube with internal screws (like the inside of a nut)
 
+[ ] spiral staircase
+
+[ ] through-holes for chopsticks / pencils 
+
 [ ] decorative inside
 
   [ ] pit of hands, like in Labyrinth
 
   [ ] pit of faces
+
+  [ ] pit of fiddles
 
 [ ] decorative outside
 
