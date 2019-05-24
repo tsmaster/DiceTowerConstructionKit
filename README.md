@@ -28,6 +28,7 @@ Current modules include:
 
  - Propellor: a pair of blades that cause the dice to go counterclockwise around the tube
 
+ - Spiral Staircase: a spiral staircase, suitable for tiny wizards to climb
 
 More modules are planned. You can print out any number of modules and
 assemble them as you like, and each module can be freely

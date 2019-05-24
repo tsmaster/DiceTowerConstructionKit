@@ -60,7 +60,7 @@ Modules:
 
 [ ] tube with internal screws (like the inside of a nut)
 
-[ ] spiral staircase
+[x] spiral staircase
 
 [ ] through-holes for chopsticks / pencils 
 
