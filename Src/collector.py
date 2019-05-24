@@ -1,6 +1,7 @@
 import sys
 import openpyscad as ops
 import math
+import os
 
 import tube
 
@@ -47,5 +48,5 @@ def collectorWithRamp():
     return base + ramp
 
 if __name__ == "__main__":
-    #collectorBase().write("collector.scad")
-    collectorWithRamp().write("collector.scad")
+    #collectorBase().write(os.path.join(tube.SCAD_DIR, "collector.scad"))
+    collectorWithRamp().write(os.path.join(tube.SCAD_DIR, "collector.scad"))

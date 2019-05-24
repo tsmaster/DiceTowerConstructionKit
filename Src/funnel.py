@@ -1,5 +1,6 @@
 import sys
 import openpyscad as ops
+import os
 
 import tube
 
@@ -44,4 +45,4 @@ def conicFunnel():
 
 
 if __name__ == "__main__":
-    conicFunnel().write("coneFunnel.scad")
+    conicFunnel().write(os.path.join(tube.SCAD_DIR, "coneFunnel.scad"))

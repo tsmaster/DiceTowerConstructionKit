@@ -1,6 +1,7 @@
 import sys
 import openpyscad as ops
 import math
+import os
 
 import tube
 
@@ -44,4 +45,4 @@ def staircase():
 
 
 if __name__ == "__main__":
-    staircase().write("staircase.scad")
+    staircase().write(os.path.join(tube.SCAD_DIR, "staircase.scad"))

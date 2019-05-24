@@ -1,6 +1,7 @@
 import sys
 import openpyscad as ops
 import math
+import os
 
 import tube
 
@@ -38,4 +39,4 @@ def prop1():
 
 
 if __name__ == "__main__":
-    prop1().write("propellor.scad")
+    prop1().write(os.path.join(tube.SCAD_DIR, "propellor.scad"))

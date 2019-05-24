@@ -1,6 +1,7 @@
 import sys
 import openpyscad as ops
 import math
+import os
 
 import tube
 
@@ -28,4 +29,4 @@ def singleRamp(h):
 
 
 if __name__ == "__main__":
-    singleRamp(30).write("ramp1.scad")
+    singleRamp(30).write(os.path.join(tube.SCAD_DIR, "ramp1.scad"))

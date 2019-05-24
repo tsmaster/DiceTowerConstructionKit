@@ -1,5 +1,6 @@
 import sys
 import openpyscad as ops
+import os
 
 import tube
 
@@ -28,6 +29,6 @@ def triangularBeam(height, offset):
     return baseTube + (beam & innerSpace)
 
 if __name__ == "__main__":
-    triangularBeam(25, 5).write("beam1.scad")
-    triangularBeam(25, 10).write("beam2.scad")
+    triangularBeam(25, 5).write(os.path.join(tube.SCAD_DIR, "beam1.scad"))
+    triangularBeam(25, 10).write(os.path.join(tube.SCAD_DIR, "beam2.scad"))
                                    

@@ -1,6 +1,7 @@
 import sys
 import openpyscad as ops
 import math
+import os
 
 import tube
 
@@ -91,5 +92,5 @@ def chainModule():
         
 
 if __name__ == "__main__":
-    #link().write("link_test.scad")
-    chainModule().write("chain.scad")
+    #link().write(os.path.join(tube.SCAD_DIR, "link_test.scad"))
+    chainModule().write(os.path.join(tube.SCAD_DIR, "chain.scad"))

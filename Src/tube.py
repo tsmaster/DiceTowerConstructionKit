@@ -1,5 +1,6 @@
 import sys
 import openpyscad as ops
+import os
 
 DIAMETER = 100 # 80 feels too small, 100 might be too big to print on my printer
 RADIUS = DIAMETER / 2
@@ -12,6 +13,7 @@ CYLINDER_SIDES = 64
 
 RIM_EPSILON = 0.65
 
+SCAD_DIR = "../Scad"
 
 def tubeInnerSpace(h):
     return ops.Cylinder(h = h, r = RADIUS - THICKNESS, _fn=CYLINDER_SIDES)
@@ -70,8 +72,8 @@ def holeyTube(h, holeRadius, numHoles):
 
 
 if __name__ == "__main__":
-    basicTube(25).write("tube.scad")
-    #holeyTube(25, 8, 13).write("tube1.scad")
-    #holeyTube(20, 4.5, 27).write("tube2.scad")
-    holeyTube(20, 4.5, 9).write("tube3.scad")
-    basicTube(20).write("tube4.scad")
+    basicTube(25).write(os.path.join(SCAD_DIR, "tube.scad"))
+    #holeyTube(25, 8, 13).write(os.path.join(SCAD_DIR, "tube1.scad"))
+    #holeyTube(20, 4.5, 27).write(os.path.join(SCAD_DIR, "tube2.scad"))
+    holeyTube(20, 4.5, 9).write(os.path.join(SCAD_DIR, "tube3.scad"))
+    basicTube(20).write(os.path.join(SCAD_DIR, "tube4.scad"))
