@@ -19,7 +19,7 @@ def tubeInnerSpace(h):
     return ops.Cylinder(h = h, r = RADIUS - THICKNESS, _fn=CYLINDER_SIDES)
 
 def basicTube(h):
-    b = ops.Cylinder(h = h, r = RADIUS, _fn=CYLINDER_SIDES) - ops.Cylinder(h = 2*h, r = RADIUS - THICKNESS, _fn=CYLINDER_SIDES).translate([0, 0, -h / 2.0])
+    b = ops.Cylinder(h = h + RIM_HEIGHT, r = RADIUS, _fn=CYLINDER_SIDES) - ops.Cylinder(h = 2*h, r = RADIUS - THICKNESS, _fn=CYLINDER_SIDES).translate([0, 0, -h / 2.0])
 
     
     lower = ops.Cylinder(h = RIM_HEIGHT + 1, r = RADIUS - THICKNESS / 2 + RIM_EPSILON, _fn=CYLINDER_SIDES).translate([0, 0, -1])
@@ -47,7 +47,7 @@ def basicTube(h):
     upperRimExternalRadius = RADIUS - (THICKNESS / 2) - RIM_EPSILON
         
     upper = (ops.Cylinder(h = RIM_HEIGHT + 1, r = RADIUS + 1, _fn = CYLINDER_SIDES) -
-             ops.Cylinder(h = RIM_HEIGHT + 2, r = upperRimExternalRadius, _fn = CYLINDER_SIDES).translate([0, 0, -1])).translate([0, 0, h - RIM_HEIGHT])
+             ops.Cylinder(h = RIM_HEIGHT + 2, r = upperRimExternalRadius, _fn = CYLINDER_SIDES).translate([0, 0, -1])).translate([0, 0, h])
 
 
     return b - lower - upper

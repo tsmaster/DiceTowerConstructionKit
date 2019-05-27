@@ -2,6 +2,9 @@
 
 By Dave LeCompte
 
+https://github.com/tsmaster/DiceTowerConstructionKit
+https://www.thingiverse.com/thing:3640800
+
 
 I recently got a Monoprice Mini Delta 3D printer, which has a 110mm
 diameter print bed. This is adequate for a lot of printing jobs, but

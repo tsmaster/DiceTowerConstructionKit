@@ -1,6 +1,6 @@
 union(){
     difference(){
-        cylinder(h=14.142135623730951, r=50.0, $fn=64);
+        cylinder(h=17.64213562373095, r=50.0, $fn=64);
         translate(v=[0, 0, -7.0710678118654755]){
             cylinder(h=28.284271247461902, r=42.5, $fn=64);
         };
@@ -16,7 +16,7 @@ union(){
                 };
             };
         };
-        translate(v=[0, 0, 10.642135623730951]){
+        translate(v=[0, 0, 14.142135623730951]){
             difference(){
                 cylinder(h=4.5, r=51.0, $fn=64);
                 translate(v=[0, 0, -1]){

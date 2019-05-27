@@ -10,13 +10,19 @@ if sys.version_info[0] != 3:
     exit(-1)
 
 # the thickness of a chain link, from hole to outside
-CHAIN_R = 3.75
+CHAIN_R = 5
 
 # the radius of the interior hole, when the link is laid flat
 HOLE_R = 1.5 * CHAIN_R
 
+# the distance from one anchor to the next
+CHAIN_SPAN = tube.DIAMETER - 2 * tube.THICKNESS - 2 * CHAIN_R
+
+# how many full links
+NUM_LINKS = 2.5
+
 # the total length of a link, on the outside
-LINK_LEN = 6 * HOLE_R
+LINK_LEN = CHAIN_SPAN / NUM_LINKS
 
 # the length of the straight part of the link
 STRAIGHT_LEN = LINK_LEN - 2 * (CHAIN_R + HOLE_R)
@@ -27,7 +33,7 @@ R2O2 = SQRT2 / 2.0
 
 LINK_REST_HEIGHT = (HOLE_R + CHAIN_R) * R2O2
 
-LINK_ADVANCE = LINK_LEN * 0.55
+LINK_ADVANCE = LINK_LEN * 0.5
 
 def link():
     crossSec = ops.Polygon(points = [[0, -CHAIN_R], [0, CHAIN_R], [CHAIN_R, 0]])
@@ -71,7 +77,7 @@ def chain(nLinks):
 
 
 def chainModule():
-    num_links = 8
+    num_links = 7
     module_height = 2 * LINK_REST_HEIGHT
     anchor_depth = CHAIN_R
     
@@ -92,5 +98,5 @@ def chainModule():
         
 
 if __name__ == "__main__":
-    #link().write(os.path.join(tube.SCAD_DIR, "link_test.scad"))
+    #link().write(os.path.join(tube.SCAD_DIR, "chain.scad"))
     chainModule().write(os.path.join(tube.SCAD_DIR, "chain.scad"))

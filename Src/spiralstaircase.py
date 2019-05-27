@@ -18,7 +18,9 @@ STEP_ANGLE = 10
 STEP_RADIANS = STEP_ANGLE * math.pi / 180.0
 
 NUM_STEPS = int(MODULE_DEGREES / STEP_ANGLE)
-MODULE_HEIGHT = STEP_HEIGHT * MODULE_DEGREES / STEP_ANGLE 
+MODULE_HEIGHT = STEP_HEIGHT * MODULE_DEGREES / STEP_ANGLE
+
+PILLAR_RADIUS = 3
 
 def staircase():
     baseTube = tube.basicTube(MODULE_HEIGHT)
@@ -38,10 +40,12 @@ def staircase():
         else:
             steps = steps + rotStep
 
+    pillar = ops.Cylinder(r = PILLAR_RADIUS, h = MODULE_HEIGHT, _fn = tube.CYLINDER_SIDES)
+
     innerSpace = tube.tubeInnerSpace(MODULE_HEIGHT)
 
 
-    return baseTube + ((steps + spiral) & innerSpace)
+    return baseTube + ((steps + spiral + pillar) & innerSpace)
 
 
 if __name__ == "__main__":

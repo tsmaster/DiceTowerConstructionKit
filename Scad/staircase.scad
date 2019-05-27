@@ -1,6 +1,6 @@
 union(){
     difference(){
-        cylinder(h=45.0, r=50.0, $fn=64);
+        cylinder(h=48.5, r=50.0, $fn=64);
         translate(v=[0, 0, -22.5]){
             cylinder(h=90.0, r=42.5, $fn=64);
         };
@@ -16,7 +16,7 @@ union(){
                 };
             };
         };
-        translate(v=[0, 0, 41.5]){
+        translate(v=[0, 0, 45.0]){
             difference(){
                 cylinder(h=4.5, r=51.0, $fn=64);
                 translate(v=[0, 0, -1]){
@@ -93,6 +93,7 @@ union(){
             linear_extrude(height=45.0, convexity=10, twist=-90, slices=45){
                 polygon(points=[[0, 0], [0, 50.0], [8.682408883346517, 50.0]]);
             };
+            cylinder(h=45.0, r=3, $fn=64);
         };
         cylinder(h=45.0, r=42.5, $fn=64);
     };

@@ -14,7 +14,7 @@ with a rim rail mounting, can assemble a bunch of modules to make a new tower ea
 
 Modules:
 
-[ ] Larger base (non circle)
+[x] Larger base (non circle)
 
 [x] Ramp - an inclined plane on one (2?) sides of the tube
 
@@ -83,3 +83,41 @@ Modules:
   [ ] procedural (blue noise) circular holes
 
   [ ] diamonds
+
+
+---
+
+TODO (May 26, 2019)
+
+There are several things I want to fix, now that I've printed about 10
+modules.
+
+The big one is restricting the contents of tubes to not extend into
+the top "rim" area, as this makes it difficult to stack modules. It
+may also make it difficult for dice to pass from module to module, but
+that's a lesser concern, and can to some degree be handled by the user
+at the table.
+
+Other notes of fixes:
+
+[x] make funnel mouth larger
+
+[x] make funnel wall thinner
+
+[x] make chain an even number of links so the anchors don't both face the same way.
+
+[x] add central pillar to spiral staircase
+
+[x] re-export all modules with the rim non-encroachment
+
+  [x] beam
+
+  [x] chain
+
+  [x] funnel
+
+  [x] propellor
+
+  [x] ramp
+
+  [x] spiral staircase
