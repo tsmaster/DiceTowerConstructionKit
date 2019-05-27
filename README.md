@@ -33,6 +33,8 @@ Current modules include:
 
  - Spiral Staircase: a spiral staircase, suitable for tiny wizards to climb
 
+ - "The Juicer": dice come in, random juice goes out. (Really, just a 6-way funnel.)
+
 More modules are planned. You can print out any number of modules and
 assemble them as you like, and each module can be freely
 rotated. Maybe you want to roll some dice at the beginning of a

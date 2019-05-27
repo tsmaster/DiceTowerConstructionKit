@@ -44,7 +44,7 @@ Modules:
 
 [ ] Curvy Blade - like a beam, but with a concave up cross section across the blade, concave down along the blade
 
-[ ] juicer - like an orange juicer, but dice come out, not juice
+[x] juicer - like an orange juicer, but dice come out, not juice
 
 [x] chain - a tube with a print-in-place chain across the tube
 
